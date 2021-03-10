@@ -1,0 +1,19 @@
+<form (ngSubmit)="updateProducto()">
+    <div class="form-group">
+        <label for="name">Nombre</label>
+        <input type="text" name="name" class="form-control"[(ngModel)]="producto.name" >
+    </div>
+
+
+
+    <div class="form-group">
+        <label for="price">Precio</label>
+        <input type="text" name="price" class="form-control" [(ngModel)]="producto.price">
+    </div>
+
+    <button class="btn btn-success">Modificar</button>
+    <button class="btn btn-primary mx-4"href="insertData">Ver</button>
+
+
+
+</form>
